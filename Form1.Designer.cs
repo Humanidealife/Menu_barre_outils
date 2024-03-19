@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,7 +38,13 @@
             this.aProposDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.couleurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.jauneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rougeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -109,17 +116,60 @@
             this.toolStripComboBox1.Name = "toolStripComboBox1";
             this.toolStripComboBox1.Size = new System.Drawing.Size(121, 28);
             // 
+            // button1
+            // 
+            this.button1.ContextMenuStrip = this.contextMenuStrip1;
+            this.button1.Location = new System.Drawing.Point(87, 167);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(350, 115);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.couleurToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 56);
+            // 
+            // couleurToolStripMenuItem
+            // 
+            this.couleurToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.jauneToolStripMenuItem,
+            this.rougeToolStripMenuItem});
+            this.couleurToolStripMenuItem.Name = "couleurToolStripMenuItem";
+            this.couleurToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.couleurToolStripMenuItem.Text = "Couleur";
+            // 
+            // jauneToolStripMenuItem
+            // 
+            this.jauneToolStripMenuItem.Name = "jauneToolStripMenuItem";
+            this.jauneToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.jauneToolStripMenuItem.Text = "Jaune";
+            this.jauneToolStripMenuItem.Click += new System.EventHandler(this.jauneToolStripMenuItem_Click);
+            // 
+            // rougeToolStripMenuItem
+            // 
+            this.rougeToolStripMenuItem.Name = "rougeToolStripMenuItem";
+            this.rougeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.rougeToolStripMenuItem.Text = "Rouge";
+            this.rougeToolStripMenuItem.Click += new System.EventHandler(this.rougeToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1183, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,6 +185,11 @@
         private System.Windows.Forms.ToolStripMenuItem aProposDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem testToolStripMenuItem;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem couleurToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem jauneToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rougeToolStripMenuItem;
     }
 }
 

@@ -31,5 +31,15 @@ namespace Menu_barre_outils
         {
             MessageBox.Show("Test");
         }
+
+        private void jauneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.Yellow;
+        }
+
+        private void rougeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.Red;
+        }
     }
 }
