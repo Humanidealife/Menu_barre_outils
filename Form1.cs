@@ -41,5 +41,16 @@ namespace Menu_barre_outils
         {
             button1.BackColor = Color.Red;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Tâche terminée";
+            toolStripProgressBar1.Value = 56;
+        }
+
+        private void choix1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Exellent choix");
+        }
     }
 }
