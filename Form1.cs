@@ -52,5 +52,10 @@ namespace Menu_barre_outils
         {
             MessageBox.Show("Exellent choix");
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Mon bouton du toolStrip");
+        }
     }
 }
