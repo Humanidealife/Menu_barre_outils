@@ -16,5 +16,20 @@ namespace Menu_barre_outils
         {
             InitializeComponent();
         }
+
+        private void ouvrirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ouvrir");
+        }
+
+        private void aProposDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("A propos de cette application");
+        }
+
+        private void testToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Test");
+        }
     }
 }
